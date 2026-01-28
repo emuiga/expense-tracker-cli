@@ -1,4 +1,4 @@
-import { PrismaClient } from '@prisma/client/index.js';
+import { PrismaClient } from '@prisma/client';
 import path from 'node:path';
 import os from 'node:os';
 import process from 'node:process';
