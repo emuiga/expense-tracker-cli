@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Expense Add",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "ts-node",
+            "args": [
+                "src/index.ts",
+                "add",
+                "--amount", "50",
+                "--category", "food"
+            ],
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector",
+            "skipFiles": ["<node_internals>/**"],
+            "preLaunchTask": "prepare-cli",
+            "env": {
+                "NODE_ENV": "development"
+            }
+        }
+    ]
+}
